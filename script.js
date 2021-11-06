@@ -109,7 +109,7 @@ function drawShape(e, contextObj) {
     contextObj.beginPath();
 }
 
-
+// Returns the true mouse position
 function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
     return {
@@ -130,7 +130,6 @@ function drawOrErase(e, contextObj) {
 // Handles mousedown
 function handleDown(e) {
     const mousePos = getMousePos(shapeCanvas, e);
-
     pressed = true;
     drawingContext.moveTo(mousePos.x, mousePos.y);
     drawingContext.beginPath();
@@ -145,14 +144,12 @@ function handleDown(e) {
 // Handles mousemove
 function handleMouseMove(e) {
     const mousePos = getMousePos(shapeCanvas, e);
-    console.log(mousePos.x, mousePos.y);
 
     if (pressed) { // Held Down Mouse
         // Erases or draws a line
         if (eraseMode || !shapeMode) {
             drawOrErase(e, drawingContext);
         } else { // Draws a temporary shape
-            console.log('drawshape');
             drawShape(e, shapeContext);
         }
     } else {
