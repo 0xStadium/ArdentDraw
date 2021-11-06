@@ -1,0 +1,80 @@
+body {
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: grey;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Canvas */
+
+.canvas-wrapper {
+    position: relative;
+}
+
+#gridCanvas {
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: 1;
+}
+
+#drawingCanvas {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
+}
+
+#shapeCanvas {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    z-index: 3;
+}
+
+/* Options */ 
+
+#options {
+    border-style: solid;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#colorPicker {
+    border: 1px solid;
+    margin: 2px 2px;
+}
+
+#blackBtn {
+    background-color: black;
+}
+
+#redBtn {
+    background-color: #B56A5B;
+}
+
+#greenBtn {
+    background-color: #64BD68;
+}
+
+#blueBtn {
+    background-color: #1A9999;
+}
+
+button {
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+button:hover {
+    border-color: turquoise;
+}

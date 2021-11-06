@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Ardent Draw</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+        <div id="options">
+            <a id="saveBtn" download="image.png" href="" onclick="downloadImage(this)"><img src="https://img.icons8.com/windows/32/000000/save--v1.png"></a>
+
+            <img id="clearBtn" src="https://img.icons8.com/windows/32/000000/delete-sign.png"/>
+            <img id="drawBtn" src="https://img.icons8.com/windows/32/000000/pencil.png"/>
+            <label for="lineWidth">Size: </label>
+            <input type="range" id="lineWidth" min="1" max="10" step="1">
+
+            <input type="color" id="colorPicker">
+
+            <button id="blackBtn" class="colorBtn"></button>
+            <button id="redBtn" class="colorBtn"></button>
+            <button id="greenBtn" class="colorBtn"></button>
+            <button id="blueBtn" class="colorBtn"></button>
+
+            <img id="circleBtn" class="shapeBtn" src="https://img.icons8.com/windows/32/000000/circled--v1.png"/>
+            <img id="squareBtn" class="shapeBtn" src="https://img.icons8.com/windows/32/000000/unchecked-checkbox.png"/>
+            <img id="rectangleBtn" class="shapeBtn" src="https://img.icons8.com/windows/32/000000/rectangle-stroked.png"/>
+
+            <label for="gridSize">Grid: </label>
+            <input type="range" id="gridSize" min="20" max="100" step="20">
+            <img id="gridBtn" src="https://img.icons8.com/windows/32/000000/activity-grid--v1.png"/>
+
+            <img id="eraseBtn" src="https://img.icons8.com/windows/32/000000/eraser.png"/>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="gridCanvas"></canvas>
+            <canvas id="drawingCanvas"></canvas>
+            <canvas id="shapeCanvas"></canvas>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
