@@ -1,13 +1,13 @@
 # Quizical
 * [App Link](https://seongsp.github.io/ArdentDraw/)
 
-## App Summary
-A whiteboard app with functions such as drawing shapes and saving images.
-
 ## Wireframe
 ![](screenshots/Homepage.JPG)
 
-## Wireframe
+## App Summary
+A whiteboard app with functions such as drawing shapes and saving images.
+
+## User Stories
 * As a user, I can choose my pen width and colors
 * As a user, I can toggle the grid on and off with varying grid sizes
 * As a user, I can draw with my pen
